@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { HeaderComponent } from './header/header.component';
+import { ImageFormatterComponent } from './image-formatter/image-formatter.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,13 @@ import { HeaderComponent } from './header/header.component';
     GridComponent,
     SlidebarComponent,
     HeaderComponent,
+    ImageFormatterComponent,
 
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AgGridModule.withComponents(null),
+    AgGridModule.withComponents(ImageFormatterComponent),
     MatSliderModule,
     LayoutModule,
     MatToolbarModule,
