@@ -12,7 +12,7 @@ export class SlidebarComponent {
 
   public isExpanded = false;
 
-  public clickedItem: 'dashboard' | 'fund' | 'summary' | 'custom view' | 'none' = 'none';
+  public clickedItem: 'dashboard' | 'fund' | 'summary' | 'custom view' | 'none' = 'fund';
 
   public onClick(item: 'dashboard' | 'fund' | 'summary' | 'custom view' | 'none') {
     this.clickedItem = item;
