@@ -1,4 +1,16 @@
 
+.mat-drawer {
+  background: #052950;
+}
+
+.mat-nav-list {
+  background: #052950; 
+}
+
+.panel-text {
+  color: white;
+}
+
 .sidenav-container {
   height: 100%;
 }

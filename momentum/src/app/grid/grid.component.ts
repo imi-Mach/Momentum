@@ -25,7 +25,7 @@ export class GridComponent implements OnInit {
     minWidth: 150,
     sortable: true,
     filter: true,
-    menuTabs: ['generalMenuTab', 'filterMenuTab']
+    menuTabs: ['filterMenuTab','generalMenuTab', ]
   };
 
 
