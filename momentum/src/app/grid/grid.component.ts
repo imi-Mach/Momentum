@@ -24,14 +24,15 @@ export class GridComponent implements OnInit {
     flex: 1,
     minWidth: 150,
     sortable: true,
-    menuTabs: ['generalMenuTab', 'filterMenuTab','columnsMenuTab']
+    filter: true,
+    menuTabs: ['generalMenuTab', 'filterMenuTab']
   };
 
-  /*
+
   public getMainMenuItems = () => {
-    return ['pinSubMenu', 'columnsMenuTab', 'filterMenuTab']
+    return ['pinSubMenu']
    }
-  */
+
 
   // consider adding data populator here
   constructor() { }
