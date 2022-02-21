@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container-mat-typography" autosize>
-  <mat-drawer #drawer mode="side" disableClose="true" opened="true" style="border: solid white 1px;">
+  <mat-drawer #drawer mode="side" disableClose="true" opened="true" style="margin-left: 10px; border: solid white 1px;">
     <button mat-mini-fab (click)="isExpanded = !isExpanded" style="margin: 10px; background: #052950;">
       <mat-icon *ngIf="!isExpanded" aria-label="Menu">chevron_right</mat-icon>
       <mat-icon *ngIf="isExpanded" aria-label="Menu">chevron_left</mat-icon>
@@ -25,33 +25,40 @@
     </mat-nav-list>
   </mat-drawer>
 
-  <div class="example-sidenav-content">
-    <mat-accordion>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header class="exp-header">
-          <mat-panel-title class="panel-text">
-            Momentum ag-Grid
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <app-grid></app-grid>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header class="exp-header">
-          <mat-panel-title class="panel-text">
-            Momentum Exceptions
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-          No information to display
-        </mat-expansion-panel>
-        <mat-expansion-panel>
+  <div class="sidenav-content">
+    <div style="margin-top: 10px;">
+      <button class="sidenav-element" mat-flat-button style="color: white; background: #0985C7;">Action One</button>
+      <button class="sidenav-element" mat-flat-button style="margin-left: 10px; color: white; background: #0985C7;">Action Two</button>
+    </div>
+
+    <div style="margin-top: 10px">
+      <mat-accordion>
+        <mat-expansion-panel class="sidenav-element">
           <mat-expansion-panel-header class="exp-header">
             <mat-panel-title class="panel-text">
-              Momentum Ratings
+              Momentum ag-Grid
             </mat-panel-title>
           </mat-expansion-panel-header>
-          No Infromation to display
+          <app-grid></app-grid>
         </mat-expansion-panel>
-    </mat-accordion> 
+        <mat-expansion-panel class="sidenav-element">
+          <mat-expansion-panel-header class="exp-header">
+            <mat-panel-title class="panel-text">
+              Momentum Exceptions
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            No information to display
+          </mat-expansion-panel>
+          <mat-expansion-panel class="sidenav-element">
+            <mat-expansion-panel-header class="exp-header">
+              <mat-panel-title class="panel-text">
+                Momentum Ratings
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            No Infromation to display
+          </mat-expansion-panel>
+      </mat-accordion> 
+    </div>
   </div>
   
 </mat-drawer-container>

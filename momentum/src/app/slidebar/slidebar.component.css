@@ -1,6 +1,14 @@
-.example-sidenav-content {
+.example-container-mat-typography {
+  background: #EEEEEE;
+}
+
+.sidenav-element {
+  left: 10px;
+}
+
+.sidenav-content {
     position: absolute;
-    left: 0;
+    left: 20px;
     right: 0;
     top: 0;
     bottom: 0;

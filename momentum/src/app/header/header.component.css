@@ -6,10 +6,6 @@
     width: 10px;
 }
 
-.example-spacer {
-    flex: 1 1 auto;
-}
-
 .name {
     width: 15%;
     height: auto;
