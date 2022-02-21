@@ -1,12 +1,21 @@
 .mat-drawer-container {
   height: 1000px;
 }
+
 .mat-drawer {
   background: #052950;
 }
 
 .mat-nav-list {
   background: #052950; 
+}
+
+.active {
+  background: red
+}
+
+.inactive {
+  background: #052950;
 }
 
 .panel-text {

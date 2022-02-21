@@ -5,32 +5,53 @@
     </button>
 
     <mat-nav-list>
-      <mat-list-item>
-        <img src="/assets/dashboard_icon-white-24px.svg" alt="Dashboard Icon">
+      <mat-list-item [ngClass]="{active: clickedItem === 'dashboard'}" (click)="onClick('dashboard')">
+        <img matListIcon src="/assets/dashboard_icon-white-24px.svg" alt="Dashboard Icon">
         <h4 class="panel-text" mat-line *ngIf="isExpanded">Dashboard</h4>
       </mat-list-item>
-      <mat-list-item>
-        <img src="/assets/Fund_CCY_Date_icon-white-24dp.svg" alt="Fund Icon">
+      <mat-list-item [ngClass]="{active: clickedItem === 'fund'}" (click)="onClick('fund')">
+        <img matListIcon src="/assets/Fund_CCY_Date_icon-white-24dp.svg" alt="Fund Icon">
         <h4 class="panel-text" mat-line *ngIf="isExpanded">Fund</h4>
       </mat-list-item>
-      <mat-list-item>
-        <img src="/assets/summary_by_fund-white-24px.svg" alt="Summary by Fund Icon">
+      <mat-list-item [ngClass]="{active: clickedItem === 'summary'}" (click)="onClick('summary')">
+        <img matListIcon src="/assets/summary_by_fund-white-24px.svg" alt="Summary by Fund Icon">
         <h4 class="panel-text" mat-line *ngIf="isExpanded">Summary by Fund</h4>
       </mat-list-item>
-      <mat-list-item>
-        <img src="/assets/custom_view-white-24dp.svg" alt="Custom View Icon">
+      <mat-list-item [ngClass]="{active: clickedItem === 'custom view'}" (click)="onClick('custom view')">
+        <img matListIcon src="/assets/custom_view-white-24dp.svg" alt="Custom View Icon">
         <h4 class="panel-text" mat-line *ngIf="isExpanded">Custom view</h4>
       </mat-list-item>
     </mat-nav-list>
   </mat-drawer>
 
-  <!--
+  
   <div class="example-sidenav-content">
-    
-
-    
-
-
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Momentum ag-Grid
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-grid></app-grid>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Momentum Exceptions
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          No information to display
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Momentum Ratings
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          No Infromation to display
+        </mat-expansion-panel>
+    </mat-accordion> 
   </div>
-  -->
+  
 </mat-drawer-container>

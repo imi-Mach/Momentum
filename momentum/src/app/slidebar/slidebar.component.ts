@@ -10,7 +10,14 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class SlidebarComponent {
 
-  isExpanded = false;
+  public isExpanded = false;
+
+  public clickedItem: 'dashboard' | 'fund' | 'summary' | 'custom view' | 'none' = 'none';
+
+  public onClick(item: 'dashboard' | 'fund' | 'summary' | 'custom view' | 'none') {
+    this.clickedItem = item;
+  }
+
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
