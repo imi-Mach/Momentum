@@ -1,22 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AgGridModule } from 'ag-grid-angular';
-import { HeaderComponent } from './header/header.component';
 import { GridComponent } from './grid/grid.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+
+import { MatSliderModule } from '@angular/material/slider';
+import { SlidebarComponent } from './slidebar/slidebar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     GridComponent,
-    SidebarComponent
+    SlidebarComponent,
+
   ],
   imports: [
     BrowserModule,
-    AgGridModule.withComponents(null)
+    BrowserAnimationsModule,
+    AgGridModule.withComponents(null),
+    MatSliderModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
