@@ -11,31 +11,21 @@
 }
 
 .active {
-  background: red
+  background-image: linear-gradient(to right, #094B68, #107E8A);
 }
 
-.inactive {
-  background: #052950;
+.mat-list-item:hover {
+  background-image: linear-gradient(to right, #052950, #107E8A);
 }
 
 .panel-text {
   color: white;
 }
 
-.sidenav-container {
-  height: 100%;
+.exp-header {
+  background-color: #052950 !important;
 }
 
-.sidenav {
-  width: 200px;
-}
-
-.sidenav .mat-toolbar {
-  background: inherit;
-}
-
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+.exp-header:hover {
+  background-color: #052950 !important;
 }

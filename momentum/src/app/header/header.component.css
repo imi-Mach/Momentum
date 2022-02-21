@@ -1,0 +1,16 @@
+.mat-toolbar {
+    background-image: linear-gradient(to right, #052950, #107E8A);
+}
+
+.gap {
+    width: 10px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.name {
+    width: 15%;
+    height: auto;
+}
