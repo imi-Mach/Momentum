@@ -1,4 +1,6 @@
-
+.mat-drawer-container {
+  height: 1000px;
+}
 .mat-drawer {
   background: #052950;
 }
