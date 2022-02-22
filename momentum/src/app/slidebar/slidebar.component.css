@@ -1,5 +1,13 @@
+
 .example-container-mat-typography {
   background: #EEEEEE;
+}
+
+
+.md-sidenav.md-locked-open {
+  width: 250px;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .sidenav-element {

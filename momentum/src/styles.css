@@ -2,10 +2,12 @@
 @import "ag-grid-community/dist/styles/ag-grid.css";
 @import "ag-grid-community/dist/styles/ag-theme-material.css";
 
-html, body { 
-    height: 100%; 
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: #EEEEEE;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-expansion-indicator::after {
     color: white;
@@ -21,4 +23,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .example-spacer {
     flex: 1 1 auto;
+}
+
+.ag-theme-material .ag-checkbox-input-wrapper.ag-checked::after {
+    color: #052950 !important;
+  }
+
+.ag-row .ag-header .ag-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

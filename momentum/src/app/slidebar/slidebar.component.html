@@ -1,8 +1,8 @@
-<mat-drawer-container class="example-container-mat-typography" autosize>
-  <mat-drawer #drawer mode="side" disableClose="true" opened="true" style="margin-left: 10px; border: solid white 1px;">
+<mat-drawer-container class="example-container-mat-typography" autosize style="left: 24px">
+  <mat-drawer #drawer mode="side" disableClose="true" opened="true" style="max-width: 271px; min-width: 70px; border: solid white 1px;">
     <button mat-mini-fab (click)="isExpanded = !isExpanded" style="margin: 10px; background: #052950;">
       <mat-icon *ngIf="!isExpanded" aria-label="Menu">chevron_right</mat-icon>
-      <mat-icon *ngIf="isExpanded" aria-label="Menu">chevron_left</mat-icon>
+      <mat-icon *ngIf="isExpanded" aria-label="Menu" style="float: right;">chevron_left</mat-icon>
     </button>
 
     <mat-nav-list>
