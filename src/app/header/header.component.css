@@ -1,0 +1,16 @@
+.mat-toolbar {
+    background-image: linear-gradient(to right, #052950, #107E8A);
+}
+
+.gap {
+    width: 10px;
+}
+
+.name {
+    width: 15%;
+    height: auto;
+}
+
+.profile-pic {
+    filter: invert(100%) sepia(6%) saturate(641%) hue-rotate(218deg) brightness(106%) contrast(106%);
+}

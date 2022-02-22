@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-material.css";
+
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: #EEEEEE;
+}
+
+.mat-expansion-indicator::after {
+    color: white;
+  }
+
+.mat-accordion {
+    width: 76%;
+}
+
+.mat-expansion-panel {
+    width: 76%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.ag-theme-material .ag-checkbox-input-wrapper.ag-checked::after {
+    color: #052950 !important;
+  }
+
+.ag-row .ag-header .ag-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
