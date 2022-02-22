@@ -17,14 +17,14 @@
 .sidenav-content {
     position: absolute;
     left: 20px;
-    right: 0;
+    right: 10%;
     top: 0;
     bottom: 0;
     background: white;
 }
 
 .mat-drawer-container {
-  height: 1000px;
+  height: 750px;
 }
 
 .mat-drawer {
